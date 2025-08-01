@@ -281,41 +281,7 @@ if (window.innerWidth > 768) {
     new CursorTrail();
 }
 
-// Theme switcher (bonus feature)
-function createThemeSwitcher() {
-    const switcher = document.createElement('button');
-    switcher.className = 'theme-switcher';
-    switcher.innerHTML = '<i class="fas fa-moon"></i>';
-    switcher.style.cssText = `
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        background: var(--primary-color);
-        color: var(--bg-color);
-        border: none;
-        font-size: 1.2rem;
-        cursor: pointer;
-        z-index: 1000;
-        transition: all 0.3s ease;
-        box-shadow: var(--shadow);
-    `;
-    
-    switcher.addEventListener('click', () => {
-        document.body.classList.toggle('light-theme');
-        const icon = switcher.querySelector('i');
-        icon.className = document.body.classList.contains('light-theme') 
-            ? 'fas fa-sun' 
-            : 'fas fa-moon';
-    });
-    
-    document.body.appendChild(switcher);
-}
 
-// Initialize theme switcher
-createThemeSwitcher();
 
 // Performance optimization: Lazy loading for images
 function lazyLoadImages() {

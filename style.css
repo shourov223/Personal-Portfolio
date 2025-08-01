@@ -207,13 +207,13 @@ body {
 }
 
 .image-placeholder {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     background: url("./images/hero.jpg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 50%;
+    border-radius: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
